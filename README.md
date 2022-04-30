@@ -19,4 +19,4 @@ Feel Free to Advice.
 15. JS Objects
 16. JS Events
 
-![Uploading image.png…](#)
+![Uploading image.png…](https://github.com/Wacemk96/Practice-JS/blob/main/practice_js.png)
