@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Practice...!</title>
+  </head>
+  <body>
+    <div class="container">
+      <script>
+        function reloadPage() {
+          document.getElementById("reload").innerHTML = location.reload();
+        }
+      </script>
+      <button type="button" onclick="reloadPage()">Reload Page</button>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <h2>My First JavaScript Program</h2>
+      <button
+        type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()"
+      >
+        Click me to display Date and time.
+      </button>
+
+      <h2 id="demo"></h2>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <h2>Hello</h2>
+      <p id="paragraph"></p>
+      <script>
+        document.getElementById("paragraph").innerHTML = "MY First Paragraph";
+      </script>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <script>
+        function myFunction() {
+          document.getElementById("demo1").innerHTML =
+            "Paragraph has been Changed";
+        }
+      </script>
+      <p id="demo1">If you want to change paragraph click on Button</p>
+      <button type="button" onclick="myFunction()">Click Here</button>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <script>
+        function myCal() {
+          a = 5;
+          b = 5;
+          z = a + b;
+          document.getElementById("calculator").innerHTML = z;
+        }
+      </script>
+      <button type="button" onclick="myCal()">Get Result</button>
+      <h2 id="calculator"></h2>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <p>JavaScript Posiblities</p>
+      <ul style="text-align: left !important" ;>
+        <li>innerHTML</li>
+        <li>document.write()</li>
+        <li>window.alert()</li>
+        <li>console.log</li>
+      </ul>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <p id="demo5"></p>
+      <script>
+        document.getElementById("demo5").innerHTML = "I am innerHTML";
+        document.write("I am Write Documents");
+      </script>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <script>
+        function myAlert() {
+          window.alert("I am Window Alert");
+        }
+      </script>
+      <button type="button" onclick="myAlert()">I am Window Alert</button>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <script>
+        function printConsole() {
+          console.log("I am in Console Log");
+        }
+      </script>
+      <button type="button" onclick="printConsole()">
+        Click here to See data in Console
+      </button>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <h2>4 Ways to Declare a JavaScript Variables</h2>
+      <ul style="text-align: left !important" ;>
+        <li>var</li>
+        <li>let</li>
+        <li>const</li>
+        <li>using nothing</li>
+      </ul>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <script>
+        var a, b, z;
+        a = 5;
+        b = 6;
+        z = a + b;
+        document.write("This is Var Variable using document.write " + z);
+      </script>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <script>
+        let c, d, e;
+        c = 10;
+        d = 10;
+        e = c + d;
+        document.write("This is Let Variable using document.write " + e);
+      </script>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <script>
+        const f = 5;
+        const g = 5;
+        const h = f + g;
+        document.write("This is Const Variable using document.write " + h);
+      </script>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <h2>JavaScript Arithmetic Operators</h2>
+      <ul style="text-align: center">
+        <li>+</li>
+        <li>-</li>
+        <li>*</li>
+        <li>**</li>
+        <li>/</li>
+        <li>%</li>
+        <li>++</li>
+        <li>--</li>
+      </ul>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <script>
+        a = 5;
+        b = 5;
+        z = a + b;
+        document.write("This is + Arithmetic Operator of 5 + 5 = " + z);
+      </script>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <script>
+        a = 5;
+        b = 5;
+        z = a - b;
+        document.write("This is + Arithmetic Operator of 5 - 5 = " + z);
+      </script>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <script>
+        a = 5;
+        b = 5;
+        z = a * b;
+        document.write("This is + Arithmetic Operator of 5 * 5 = " + z);
+      </script>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <script>
+        a = 5;
+        b = 5;
+        z = a ** b;
+        document.write("This is + Arithmetic Operator of 5 ** 5 = " + z);
+      </script>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <script>
+        a = 5;
+        b = 5;
+        z = a / b;
+        document.write("This is + Arithmetic Operator of 5 / 5 = " + z);
+      </script>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <script>
+        a = 5;
+        b = 100;
+        z = a % b;
+        document.write("This is + Arithmetic Operator of 5 % 100 = " + z);
+      </script>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <script>
+        a = 5;
+        b = 5;
+        b++;
+        z = a + b;
+        document.write("This is + Arithmetic Operator of 5 + 5 = " + z);
+      </script>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <script>
+        a = 16;
+        b = 5;
+        a--;
+        z = a - b;
+        document.write("This is + Arithmetic Operator of 5 -- 7 = " + z);
+      </script>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <h2>JavaScript Functions</h2>
+      <script>
+        let j = firstFunction(15, 15);
+        document.write(
+          "This is the Result of 15+15 using First Function with Return Value = " +
+            j
+        );
+        function firstFunction(a, b) {
+          return a + b;
+        }
+      </script>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <h2>javaScript Objects</h2>
+      <p>
+        In this Function I just Combine Two Strings Firt Name and Last Name into
+        Full Name with function =
+      </p>
+      <script>
+        const perSon = {
+          firstName: "Waseem",
+          lastName: "Khan",
+          age: "25",
+          eyeColor: "Black",
+          fullName: function () {
+            return this.firstName + " " + this.lastName;
+          },
+        };
+        document.write(perSon.fullName());
+      </script>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <h2>javaScript Objects into Table</h2>
+      <p>Here the object value showing in table</p>
+      <script>
+        const person = {
+          firstName: "Waseem",
+          lastName: "Khan",
+          age: "25",
+          eyeColor: "Black",
+          fullName: function () {
+            return this.firstName + " " + this.lastName;
+          },
+        };
+      </script>
+      <div class="table_center">
+        <table>
+          <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Eye Color</th>
+            <th>Full Name</th>
+          </thead>
+          <tbody>
+            <td>
+              <script>
+                document.write(person.firstName);
+              </script>
+            </td>
+            <td>
+              <script>
+                document.write(person.lastName);
+              </script>
+            </td>
+            <td>
+              <script>
+                document.write(person.age);
+              </script>
+            </td>
+            <td>
+              <script>
+                document.write(person.eyeColor);
+              </script>
+            </td>
+            <td>
+              <script>
+                document.write(person.fullName());
+              </script>
+            </td>
+          </tbody>
+        </table>
+      </div>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <h2>JavaScript Events</h2>
+      <p>OnClick Event in Button</p>
+      <button onclick="this.innerHTML = Date()">Hello Click me</button>
+      <hr style="border: 1px solid black; margin: 10px" />
+      <h2>JavaSccript Events onmouseover & onmouseout</h2>
+      <div id="line1">
+        <div onmouseover="showMore()">
+          <h3>I am Black</h3>
+        </div>
+      </div>
+
+      <script>
+        function showMore() {
+          document.getElementById("line1").innerHTML =
+            "<div onmouseout='showLess()'><h3 style=color:red;>I am Red</h3></div>";
+        }
+
+        function showLess() {
+          document.getElementById("line1").innerHTML =
+            "<div onmouseover='showMore()'><h3>I am Black</h3></div>";
+        }
+      </script>
+    </div>
+  </body>
+</html>
