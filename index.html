@@ -15,13 +15,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Practice...!</title>
+    <title>Practicing Javascript</title>
   </head>
   <body>
     <div class="container">
       <script>
         function reloadPage() {
-          document.getElementById("reload").innerHTML = location.reload();
+          document.getElementById('reload').innerHTML = location.reload();
         }
       </script>
       <button type="button" onclick="reloadPage()">Reload Page</button>
@@ -39,13 +39,13 @@
       <h2>Hello</h2>
       <p id="paragraph"></p>
       <script>
-        document.getElementById("paragraph").innerHTML = "MY First Paragraph";
+        document.getElementById('paragraph').innerHTML = 'MY First Paragraph';
       </script>
       <hr style="border: 1px solid black; margin: 10px" />
       <script>
         function myFunction() {
-          document.getElementById("demo1").innerHTML =
-            "Paragraph has been Changed";
+          document.getElementById('demo1').innerHTML =
+            'Paragraph has been Changed';
         }
       </script>
       <p id="demo1">If you want to change paragraph click on Button</p>
@@ -56,7 +56,7 @@
           a = 5;
           b = 5;
           z = a + b;
-          document.getElementById("calculator").innerHTML = z;
+          document.getElementById('calculator').innerHTML = z;
         }
       </script>
       <button type="button" onclick="myCal()">Get Result</button>
@@ -72,20 +72,20 @@
       <hr style="border: 1px solid black; margin: 10px" />
       <p id="demo5"></p>
       <script>
-        document.getElementById("demo5").innerHTML = "I am innerHTML";
-        document.write("I am Write Documents");
+        document.getElementById('demo5').innerHTML = 'I am innerHTML';
+        document.write('I am Write Documents');
       </script>
       <hr style="border: 1px solid black; margin: 10px" />
       <script>
         function myAlert() {
-          window.alert("I am Window Alert");
+          window.alert('I am Window Alert');
         }
       </script>
       <button type="button" onclick="myAlert()">I am Window Alert</button>
       <hr style="border: 1px solid black; margin: 10px" />
       <script>
         function printConsole() {
-          console.log("I am in Console Log");
+          console.log('I am in Console Log');
         }
       </script>
       <button type="button" onclick="printConsole()">
@@ -105,7 +105,7 @@
         a = 5;
         b = 6;
         z = a + b;
-        document.write("This is Var Variable using document.write " + z);
+        document.write('This is Var Variable using document.write ' + z);
       </script>
       <hr style="border: 1px solid black; margin: 10px" />
       <script>
@@ -113,14 +113,14 @@
         c = 10;
         d = 10;
         e = c + d;
-        document.write("This is Let Variable using document.write " + e);
+        document.write('This is Let Variable using document.write ' + e);
       </script>
       <hr style="border: 1px solid black; margin: 10px" />
       <script>
         const f = 5;
         const g = 5;
         const h = f + g;
-        document.write("This is Const Variable using document.write " + h);
+        document.write('This is Const Variable using document.write ' + h);
       </script>
       <hr style="border: 1px solid black; margin: 10px" />
       <h2>JavaScript Arithmetic Operators</h2>
@@ -139,42 +139,42 @@
         a = 5;
         b = 5;
         z = a + b;
-        document.write("This is + Arithmetic Operator of 5 + 5 = " + z);
+        document.write('This is + Arithmetic Operator of 5 + 5 = ' + z);
       </script>
       <hr style="border: 1px solid black; margin: 10px" />
       <script>
         a = 5;
         b = 5;
         z = a - b;
-        document.write("This is + Arithmetic Operator of 5 - 5 = " + z);
+        document.write('This is + Arithmetic Operator of 5 - 5 = ' + z);
       </script>
       <hr style="border: 1px solid black; margin: 10px" />
       <script>
         a = 5;
         b = 5;
         z = a * b;
-        document.write("This is + Arithmetic Operator of 5 * 5 = " + z);
+        document.write('This is + Arithmetic Operator of 5 * 5 = ' + z);
       </script>
       <hr style="border: 1px solid black; margin: 10px" />
       <script>
         a = 5;
         b = 5;
         z = a ** b;
-        document.write("This is + Arithmetic Operator of 5 ** 5 = " + z);
+        document.write('This is + Arithmetic Operator of 5 ** 5 = ' + z);
       </script>
       <hr style="border: 1px solid black; margin: 10px" />
       <script>
         a = 5;
         b = 5;
         z = a / b;
-        document.write("This is + Arithmetic Operator of 5 / 5 = " + z);
+        document.write('This is + Arithmetic Operator of 5 / 5 = ' + z);
       </script>
       <hr style="border: 1px solid black; margin: 10px" />
       <script>
         a = 5;
         b = 100;
         z = a % b;
-        document.write("This is + Arithmetic Operator of 5 % 100 = " + z);
+        document.write('This is + Arithmetic Operator of 5 % 100 = ' + z);
       </script>
       <hr style="border: 1px solid black; margin: 10px" />
       <script>
@@ -182,7 +182,7 @@
         b = 5;
         b++;
         z = a + b;
-        document.write("This is + Arithmetic Operator of 5 + 5 = " + z);
+        document.write('This is + Arithmetic Operator of 5 + 5 = ' + z);
       </script>
       <hr style="border: 1px solid black; margin: 10px" />
       <script>
@@ -190,14 +190,14 @@
         b = 5;
         a--;
         z = a - b;
-        document.write("This is + Arithmetic Operator of 5 -- 7 = " + z);
+        document.write('This is + Arithmetic Operator of 5 -- 7 = ' + z);
       </script>
       <hr style="border: 1px solid black; margin: 10px" />
       <h2>JavaScript Functions</h2>
       <script>
         let j = firstFunction(15, 15);
         document.write(
-          "This is the Result of 15+15 using First Function with Return Value = " +
+          'This is the Result of 15+15 using First Function with Return Value = ' +
             j
         );
         function firstFunction(a, b) {
@@ -212,12 +212,12 @@
       </p>
       <script>
         const perSon = {
-          firstName: "Waseem",
-          lastName: "Khan",
-          age: "25",
-          eyeColor: "Black",
+          firstName: 'Waseem',
+          lastName: 'Khan',
+          age: '25',
+          eyeColor: 'Black',
           fullName: function () {
-            return this.firstName + " " + this.lastName;
+            return this.firstName + ' ' + this.lastName;
           },
         };
         document.write(perSon.fullName());
@@ -227,12 +227,12 @@
       <p>Here the object value showing in table</p>
       <script>
         const person = {
-          firstName: "Waseem",
-          lastName: "Khan",
-          age: "25",
-          eyeColor: "Black",
+          firstName: 'Waseem',
+          lastName: 'Khan',
+          age: '25',
+          eyeColor: 'Black',
           fullName: function () {
-            return this.firstName + " " + this.lastName;
+            return this.firstName + ' ' + this.lastName;
           },
         };
       </script>
@@ -288,12 +288,12 @@
 
       <script>
         function showMore() {
-          document.getElementById("line1").innerHTML =
+          document.getElementById('line1').innerHTML =
             "<div onmouseout='showLess()'><h3 style=color:red;>I am Red</h3></div>";
         }
 
         function showLess() {
-          document.getElementById("line1").innerHTML =
+          document.getElementById('line1').innerHTML =
             "<div onmouseover='showMore()'><h3>I am Black</h3></div>";
         }
       </script>
